@@ -1,0 +1,96 @@
+---
+name: Muhammad Aswan **Syahputra**
+profilepic: "../img/aswan.jpg"
+position: "Food Sensory and Sensometrics Consultant"
+aboutme: "\"... how hard one finds it to learn something is a function of the intrinsic difficulty of the thing, the person's previous experience, preferred modes of thinking, etc., and how learning is approached.\" - John Fox"
+address: "Agung Lestari Residence No B13, Jln. Somawinata, Ds. Tanimulya, Kec. Ngamprah, Kab. Bandung Barat, Jawa Barat"
+phone: +62 822 3465 3816
+www: aswansyahputra.com
+email: "aswansyahputra@sensolution.id"
+linkedin: aswansyahputra
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "37c871"
+output: vitae::awesomecv
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Summary
+I would like to recognize myself as a Food Data Scientist. I have expertise in Sensory Science with Food Technology background, passion in data analysis, and hobby in R programming and Shiny framework. As I always love Sensory Science, data analysis, and R programming, I then motivated to create of SenseHub: an integrated web application for sensory analyses.
+
+# Education
+```{r}
+education <- read.csv("../data/education.csv")
+
+education %>% 
+  detailed_entries(
+    what = what,
+    when = when,
+    with = with,
+    where = where,
+    why = why
+  )
+```
+
+# Research Experience
+```{r}
+research <- read.csv("../data/research.csv")
+
+research %>% 
+  detailed_entries(
+    what = event,
+    when = when,
+    with = topic,
+    where = where,
+    why = why
+  )
+```
+
+# Projects
+```{r}
+project <- read.csv("../data/project.csv")
+
+project %>% 
+  brief_entries(
+    what = what,
+    when = when)
+```
+
+# Work Experience
+```{r}
+work <- read.csv("../data/work.csv")
+
+work %>% 
+  detailed_entries(
+    what = what,
+    when = when,
+    with = with,
+    where = where  )
+```
+
+# External Activity
+```{r}
+activity <- read.csv("../data/activity.csv")
+
+activity %>% 
+  brief_entries(
+    what = what,
+    when = when,
+    with = with)
+```
+
+# Skills
+```{r}
+skill <- read.csv("../data/skill.csv")
+
+skill %>% 
+  brief_entries(
+    what = what,
+    when = when, 
+    .protect = FALSE)
+```
