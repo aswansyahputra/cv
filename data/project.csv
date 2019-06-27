@@ -1,8 +1,10 @@
-what,when
-Development of SenseQuest: a web application for sensory questionnaire,2019
-Development of sensehubr: a tidy approach for sensory analyses (R package),2019
-Development of SenseXtra: a web application for complementary sensory data preparation,2019
-Development of SenseHub: an integrated web application for sensory analyses,2019
-Development of Aquastats: a web application for groundwater data analyses,2018
-Development of Thermostats: a web application for water daya analyses,2018
-Development of MCDM: a web application for conducting Multiple Criteria Decision Making,2018
+what,type
+"Syahputra, MA. (2019). sensehubr: a tidy tools for sensory data analysis.",\textbf{R package}
+"Syahputra, MA. (2019). bandungjuara: an R interface for accessing Open Data Kota Bandung.",\textbf{R package}
+"Syahputra, MA. (2019). jakartaraya: an R interface for accessing Open Data Kota Jakarta.",\textbf{R package}
+"Syahputra, MA. (2019). nusandata: a curated datasets about Indonesia.",\textbf{R package}
+"Syahputra, MA. (2019). SenseQuest: an web application for sensory data collection.",\textbf{Web apps}
+"Syahputra, MA. (2018). SenseHub: an integrated web application for sensory analysis.",\textbf{Web apps}
+"Irawan, DE., Syahputra, MA. (2018). Aquastats: a web application for groundwater data analyses.",\textbf{Web apps}
+"Irawan, DE., Syahputra, MA. (2018). Thermostats: a web application for hot water data analyses.",\textbf{Web apps}
+"Syahputra, MA. (2018). MCDM: a shiny application for performing Multiple Criteria Decision Making (MCDM).",\textbf{Web apps}

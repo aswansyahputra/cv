@@ -1,18 +1,17 @@
 ---
-name: Muhammad Aswan **Syahputra**
-profilepic: "../img/aswan.jpg"
-position: "Food Sensory and Sensometrics Consultant"
-aboutme: "\"... how hard one finds it to learn something is a function of the intrinsic difficulty of the thing, the person's previous experience, preferred modes of thinking, etc., and how learning is approached.\" - John Fox"
-address: "Agung Lestari Residence No B13, Jln. Somawinata, Ds. Tanimulya, Kec. Ngamprah, Kab. Bandung Barat, Jawa Barat"
+name: "Muhammad Aswan **Syahputra**"
+position: "Sensory Scientist and Sensometrics Specialist"
+aboutme: "I would like to recognize myself as a Food Data Scientist. I have an expertise in Sensory Science with a Food Technology background, a passion in data analysis and visualisation, an eagerness in R statistical programming, and a hobby in developing analytical web application."
+address: "Puri Cipageran Indah I Blok A No 191, Kota Cimahi, Jawa Barat, Indonesia"
 phone: +62 822 3465 3816
-www: aswansyahputra.com
-email: "aswansyahputra@sensolution.id"
+email: muhammadaswansyahputra@gmail.com
+github: aswansyahputra
 linkedin: aswansyahputra
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: "37c871"
-output: vitae::awesomecv
-editor_options: 
-  chunk_output_type: console
+headcolor: "414141"
+output: 
+  vitae::awesomecv:
+    keep_tex: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -20,10 +19,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 ```
 
-# Summary
-I would like to recognize myself as a Food Data Scientist. I have expertise in Sensory Science with Food Technology background, passion in data analysis, and hobby in R programming and Shiny framework. As I always love Sensory Science, data analysis, and R programming, I then motivated to create of SenseHub: an integrated web application for sensory analyses.
-
 # Education
+
 ```{r}
 education <- read.csv("../data/education.csv")
 
@@ -37,7 +34,10 @@ education %>%
   )
 ```
 
-# Research Experience
+# Experience
+
+## Research
+
 ```{r}
 research <- read.csv("../data/research.csv")
 
@@ -51,17 +51,10 @@ research %>%
   )
 ```
 
-# Projects
-```{r}
-project <- read.csv("../data/project.csv")
 
-project %>% 
-  brief_entries(
-    what = what,
-    when = when)
-```
 
-# Work Experience
+## Work
+
 ```{r}
 work <- read.csv("../data/work.csv")
 
@@ -70,27 +63,61 @@ work %>%
     what = what,
     when = when,
     with = with,
-    where = where  )
+    where = where,
+    why = why
+  )
 ```
 
 # External Activity
 ```{r}
 activity <- read.csv("../data/activity.csv")
 
-activity %>% 
-  brief_entries(
+activity %>%
+  detailed_entries(
     what = what,
     when = when,
-    with = with)
+    with = with,
+    where = where,
+    why = why
+  )
 ```
 
-# Skills
+# Presentation
 ```{r}
-skill <- read.csv("../data/skill.csv")
+presentation <- read.csv("../data/presentation.csv")
 
-skill %>% 
+presentation %>%
+  detailed_entries(
+    what = event,
+    when = when,
+    with = title,
+    where = where,
+    why = content
+  )
+```
+
+# Developed Software
+
+
+```{r}
+project <- read.csv("../data/project.csv")
+
+project %>% 
   brief_entries(
     what = what,
-    when = when, 
-    .protect = FALSE)
+    when = type,
+    .protect = FALSE
+  )
 ```
+
+<!-- # Skill -->
+
+<!-- ```{r} -->
+<!-- skill <- read.csv("../data/skill.csv") -->
+
+<!-- skill %>%  -->
+<!--   brief_entries( -->
+<!--     what = what, -->
+<!--     when = when,  -->
+<!--     .protect = FALSE) -->
+<!-- ``` -->
