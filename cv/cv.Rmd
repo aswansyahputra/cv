@@ -1,9 +1,9 @@
 ---
 name: "Muhammad Aswan **Syahputra**"
-position: "Sensory Scientist and Sensometrics Specialist"
+position: "Sensory Scientist \u00B7 Sensometrics Specialist"
 aboutme: "I would like to recognize myself as a Food Data Scientist. I have an expertise in Sensory Science with a Food Technology background, a passion in data analysis and visualisation, an eagerness in R statistical programming, and a hobby in developing analytical web application."
 address: "Puri Cipageran Indah I Blok A No 191, Kota Cimahi, Jawa Barat, Indonesia"
-phone: +62 822 3465 3816
+phone: (+62) 822 3465 3816
 email: muhammadaswansyahputra@gmail.com
 github: aswansyahputra
 linkedin: aswansyahputra
