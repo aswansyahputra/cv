@@ -79,7 +79,7 @@
 % Templates for detailed entries
 % Arguments: what when with where why
 \usepackage{etoolbox}
-\def\detaileditem#1#2#3#4#5{
+\def\detaileditem#1#2#3#4#5{%
 \cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}}
 \def\detailedsection#1{\begin{cventries}#1\end{cventries}}
 
@@ -103,9 +103,10 @@
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
 \makecvfooter
-  {June 2019}
-  {Muhammad Aswan \textbf{Syahputra}~~~·~~~Curriculum Vitae}
+  {July 2019}
+    {Muhammad Aswan \textbf{Syahputra}~~~·~~~Curriculum Vitae}
   {\thepage}
 
 
@@ -119,17 +120,7 @@
 \hypertarget{education}{%
 \section{Education}\label{education}}
 
-\detailedsection{\detaileditem
-{Master in Food Technology, Sensory Science specialisation}
-{2016-2018}
-{Wageningen University and Research}
-{Wageningen, The Netherlands}
-{\item{Thesis: “Observation of Chewing Activity using Photoplethysmography (PPG) method”. Supervisors: Monica Mars and Chirstos Diou.}\item{Internship: “Development of SenseHub: an integrated web application for sensory analyses”. Supervisors: Kiki Fibrianto and Betina Piqueras-Fiszman.}\item{Excelled in: Advance Sensory Science and Sensometrics (MCB-32806), Integrated Sensory Science (MCB-33306), Instrumental Sensory Science (HNE-30606), Product and Process Design (FQD-60312), and Advance Statistics (MAT-20306).}\item{Granted with Indonesian Education Scholarship from Indonesia Endowment Fund of Education (LPDP).}\item{CGPA of 3.45/4.00 (conversion).}}\detaileditem
-{Bachelor in Agricultural Product Technology, Food Science and Technology program}
-{2011-2015}
-{Universitas Brawijaya}
-{Malang, Indonesia}
-{\item{Thesis: “Exploratory study: the influence of iced-coffee drinking methods to consumers’ multisensory perception utilizing Rate-all-that-Apply (RATA) method”. Supervisors: Kiki Fibrianto and Indria Purwantiningrum.}\item{Internship: “Sensory evaluation of specialty coffee using cups tasting procedure”. Supervisors: Kiki Fibrianto and Yusianto.}\item{Excelled in: Food Product Development and Sensory Evaluation, Food Processing Technology, and Statistic and Computation.}\item{Granted with PPA Scholarship from Ministry of Research, Technology and Higher Education of Indonesia.}\item{CGPA of 3.81/4.00.}}}
+\detailedsection{\detaileditem{Master in Food Technology, Sensory Science specialisation}{2016-2018}{Wageningen University and Research}{Wageningen, The Netherlands}{\item{Thesis: “Observation of Chewing Activity using Photoplethysmography (PPG) method”. Supervisors: Monica Mars and Chirstos Diou.}\item{Internship: “Development of SenseHub: an integrated web application for sensory analyses”. Supervisors: Kiki Fibrianto and Betina Piqueras-Fiszman.}\item{Excelled in: Advance Sensory Science and Sensometrics (MCB-32806), Integrated Sensory Science (MCB-33306), Instrumental Sensory Science (HNE-30606), Product and Process Design (FQD-60312), and Advance Statistics (MAT-20306).}\item{Granted with Indonesian Education Scholarship from Indonesia Endowment Fund of Education (LPDP).}\item{CGPA of 3.45/4.00 (conversion).}}\detaileditem{Bachelor in Agricultural Product Technology, Food Science and Technology program}{2011-2015}{Universitas Brawijaya}{Malang, Indonesia}{\item{Thesis: “Exploratory study: the influence of iced-coffee drinking methods to consumers’ multisensory perception utilizing Rate-all-that-Apply (RATA) method”. Supervisors: Kiki Fibrianto and Indria Purwantiningrum.}\item{Internship: “Sensory evaluation of specialty coffee using cups tasting procedure”. Supervisors: Kiki Fibrianto and Yusianto.}\item{Excelled in: Food Product Development and Sensory Evaluation, Food Processing Technology, and Statistic and Computation.}\item{Granted with PPA Scholarship from Ministry of Research, Technology and Higher Education of Indonesia.}\item{CGPA of 3.81/4.00.}}}
 
 \hypertarget{experience}{%
 \section{Experience}\label{experience}}
@@ -137,162 +128,24 @@
 \hypertarget{research}{%
 \subsection{Research}\label{research}}
 
-\detailedsection{\detaileditem
-{Kuala Lumpur International Agriculture, Forestry \& Plantation Conference (KLIAFP)}
-{2018}
-{Consumer Preference and Satisfaction Analysis on Croissant in Malang Area}
-{Selangor, Malaysia}
-{\item{Researchers: Jaya Mahar Maligan, Yuke Pamelasari, Muhammad Aswan Syahputra.}\item{In this research we investigated various external product properties that may give contribution to consumer preference and satisfaction. By using External Preference Mapping method, we were able to discover the perceptual mapping of various Croissant brands and the segmentation of consumers group.}}\detaileditem
-{International Coference on Green Agroindustry and Bioeconomic (ICGAB)}
-{2018}
-{SenseHub: an integrated web application for sensory analyses}
-{Malang, Indonesia}
-{\item{Researchers: Muhammad Aswan Syahputra, Kiki Fibrianto, Eka Shinta Wulandari.}\item{In this research we compared the users’ experience when using generic statistical software versus SenseHub for performing sensory data analyses. SenseHub is a web application that was developed by the author to make sensory data analysis easier while embedded with plenty of state-of-the-art sensometrics procedures.}}\detaileditem
-{Master Thesis at Wageningen University and Research}
-{2018}
-{Observation of Chewing Activity using Photoplethysmography (PPG) Method}
-{Wageningen, The Netherlands}
-{\item{Researchers: Muhammad Aswan Syahputra, Monica Mars, Christos Diou.}\item{In this research we developed algorithms to monitor chewing activity during eating solid and semi-solid foods using a new sensor, Photoplethsmography (PPG). We measured the performance of the proposed algorithms and made comparison with the existing procedures for monitoring chewing, i.e. video recording analysis and Electro Myography (EMG) method.}}\detaileditem
-{Jurnal Pangan dan Agroindustri}
-{2016}
-{Effects of Delivery Methods to Multisensory Perceptions: a Review}
-{Malang, Indonesia}
-{\item{Researchers: Muhammad Aswan Syahputra, Kiki Fibrianto, Indria Purwantiningrum.}\item{In this concise review article we were discussing the possible effect of delivery methods of food and drink to multisensory perceptions during eating.}}\detaileditem
-{Bachelor Thesis at Universitas Brawijaya}
-{2015}
-{Exploratory Study: the Influence of Instant Iced-Coffee Drinking Methods to Consumers' Multisensory Perceptions Utilizing Rate-all-that-Apply (RATA) Method}
-{Malang, Indonesia}
-{\item{Researchers: Muhammad Aswan Syahputra, Kiki Fibrianto, Indria Purwantiningrum.}\item{In this research we asked participants to consume iced-coffee in three ways: drinking using straw; immediate drinking from the glass; and tasting using spoon. We discovered that the difference in drinking method may alter consumers’ multisensory perception during drinking.}}}
+\detailedsection{\detaileditem{Kuala Lumpur International Agriculture, Forestry \& Plantation Conference (KLIAFP)}{2018}{Consumer Preference and Satisfaction Analysis on Croissant in Malang Area}{Selangor, Malaysia}{\item{Researchers: Jaya Mahar Maligan, Yuke Pamelasari, Muhammad Aswan Syahputra.}\item{In this research we investigated various external product properties that may give contribution to consumer preference and satisfaction. By using External Preference Mapping method, we were able to discover the perceptual mapping of various Croissant brands and the segmentation of consumers group.}}\detaileditem{International Coference on Green Agroindustry and Bioeconomic (ICGAB)}{2018}{SenseHub: an integrated web application for sensory analyses}{Malang, Indonesia}{\item{Researchers: Muhammad Aswan Syahputra, Kiki Fibrianto, Eka Shinta Wulandari.}\item{In this research we compared the users’ experience when using generic statistical software versus SenseHub for performing sensory data analyses. SenseHub is a web application that was developed by the author to make sensory data analysis easier while embedded with plenty of state-of-the-art sensometrics procedures.}}\detaileditem{Master Thesis at Wageningen University and Research}{2018}{Observation of Chewing Activity using Photoplethysmography (PPG) Method}{Wageningen, The Netherlands}{\item{Researchers: Muhammad Aswan Syahputra, Monica Mars, Christos Diou.}\item{In this research we developed algorithms to monitor chewing activity during eating solid and semi-solid foods using a new sensor, Photoplethsmography (PPG). We measured the performance of the proposed algorithms and made comparison with the existing procedures for monitoring chewing, i.e. video recording analysis and Electro Myography (EMG) method.}}\detaileditem{Jurnal Pangan dan Agroindustri}{2016}{Effects of Delivery Methods to Multisensory Perceptions: a Review}{Malang, Indonesia}{\item{Researchers: Muhammad Aswan Syahputra, Kiki Fibrianto, Indria Purwantiningrum.}\item{In this concise review article we were discussing the possible effect of delivery methods of food and drink to multisensory perceptions during eating.}}\detaileditem{Bachelor Thesis at Universitas Brawijaya}{2015}{Exploratory Study: the Influence of Instant Iced-Coffee Drinking Methods to Consumers' Multisensory Perceptions Utilizing Rate-all-that-Apply (RATA) Method}{Malang, Indonesia}{\item{Researchers: Muhammad Aswan Syahputra, Kiki Fibrianto, Indria Purwantiningrum.}\item{In this research we asked participants to consume iced-coffee in three ways: drinking using straw; immediate drinking from the glass; and tasting using spoon. We discovered that the difference in drinking method may alter consumers’ multisensory perception during drinking.}}}
 
 \hypertarget{work}{%
 \subsection{Work}\label{work}}
 
-\detailedsection{\detaileditem
-{Sensory scientist}
-{Nov 2018 – Present}
-{Sensolution.ID – Food Sensory and Sensometrics Consulting}
-{Bandung, Indonesia}
-{\item{Developed a software for sensory data collection and analyses.}\item{Delivered trainings to clients for advance sensory methods and analyses.}\item{Assisted clients to arrange, design, and perform sensory research.}}\detaileditem
-{Instructor}
-{May 2019 – Present}
-{R Academy of Telkom University}
-{Bandung, Indonesia}
-{\item{Designed syllabus for R training courses.}\item{Delivered training for R courses, including: introduction to R for data science, data visualisation in R, machine learning in R, fundamental tidy data science in R.}}\detaileditem
-{Intern}
-{Apr 2018 – Jul 2018}
-{Sensory and Applied Food Research Group at Universitas Brawijaya}
-{Malang, Indonesia}
-{\item{Developed prototype of a new software for sensory data analyses.}\item{Delivered lectures to students in sensory evaluation and methods course.}\item{Conducted research to compare users’ experience between two different softwares when performing sensory data analyses.}}\detaileditem
-{Independent freelance}
-{2014 – Present}
-{Research Consultancy and Data Analysis Services}
-{Indonesia – The Netherlands}
-{\item{Assisted clients to properly choose and design an appropriate food research.}\item{Assisted clients to learn and analyse data collected from food research.}\item{Developed an analytical software to help clients analysing data.}}\detaileditem
-{Intern}
-{Dec 2013 – Feb 2014}
-{Indonesian Coffee and Cocoa Research Institute (ICCRI)}
-{Jember, Indonesia}
-{\item{Assisted and prepared the procedure to evaluate sensory characteristic of specialty coffee.}\item{Assisted sensory evaluation of chocolate products}}\detaileditem
-{Assistant for laboratory practicum}
-{2012 – 2015}
-{Faculty of Agricultural Technology, Universitas Brawijaya}
-{Malang, Indonesia}
-{\item{Prepared syllabus for laboratory practicum.}\item{Assisted, supervised, and evaluated students performance during laboratory works.}\item{Laboratory of Sensory Analysis, Laboratory of Post-harvest Processing Technology, and Laboratory of Chemistry.}}}
+\detailedsection{\detaileditem{Sensory scientist}{Nov 2018 – Present}{Sensolution.ID – Food Sensory and Sensometrics Consulting}{Bandung, Indonesia}{\item{Developed a software for sensory data collection and analyses.}\item{Delivered trainings to clients for advance sensory methods and analyses.}\item{Assisted clients to arrange, design, and perform sensory research.}}\detaileditem{Instructor}{May 2019 – Present}{R Academy of Telkom University}{Bandung, Indonesia}{\item{Designed syllabus for R training courses.}\item{Delivered training for R courses, including: introduction to R for data science, data visualisation in R, machine learning in R, fundamental tidy data science in R.}}\detaileditem{Intern}{Apr 2018 – Jul 2018}{Sensory and Applied Food Research Group at Universitas Brawijaya}{Malang, Indonesia}{\item{Developed prototype of a new software for sensory data analyses.}\item{Delivered lectures to students in sensory evaluation and methods course.}\item{Conducted research to compare users’ experience between two different softwares when performing sensory data analyses.}}\detaileditem{Independent freelance}{2014 – Present}{Research Consultancy and Data Analysis Services}{Indonesia – The Netherlands}{\item{Assisted clients to properly choose and design an appropriate food research.}\item{Assisted clients to learn and analyse data collected from food research.}\item{Developed an analytical software to help clients analysing data.}}\detaileditem{Intern}{Dec 2013 – Feb 2014}{Indonesian Coffee and Cocoa Research Institute (ICCRI)}{Jember, Indonesia}{\item{Assisted and prepared the procedure to evaluate sensory characteristic of specialty coffee.}\item{Assisted sensory evaluation of chocolate products}}\detaileditem{Assistant for laboratory practicum}{2012 – 2015}{Faculty of Agricultural Technology, Universitas Brawijaya}{Malang, Indonesia}{\item{Prepared syllabus for laboratory practicum.}\item{Assisted, supervised, and evaluated students performance during laboratory works.}\item{Laboratory of Sensory Analysis, Laboratory of Post-harvest Processing Technology, and Laboratory of Chemistry.}}}
 
 \hypertarget{external-activity}{%
 \section{External Activity}\label{external-activity}}
 
-\detailedsection{\detaileditem
-{Initiator}
-{2016 – Present}
-{Komunitas R Indonesia}
-{Indonesia}
-{\item{Komunitas R Indonesia is a non-profit community for Indonesian to learn and share knowledge about R statistical programming language. I initiated this community back in 2016 and now it has more than 1000 members came from cities in Indonesia. Aside from managerial activity, in several occasions I also gave presentation and training to the members during community meetup. Additionally, I share my knowledge about R programming in Youtube video in hope that it can be beneficial to broader audience.}}\detaileditem
-{Coordinator}
-{Sep 2016 – Sep 2017}
-{Association of Indonesian Education Scholarship Awardee in Wageningen University and Research}
-{Wageningen, The Netherlands}
-{\item{The massive number of Indonesian scholarship awardee in Wageningen University and Research introduces challenge in communication, sharing of information, and management between students and Indonesian government. I took an initiative and an opportunity to help both students and Indonesian government to face these challenges. Furthermore, I also assisted the students who had issues or problems in studying, financial, administration, and daily life.}}\detaileditem
-{Member and Data Analyst}
-{2015 – Present}
-{Food Sensory Research Group Universitas Brawijaya}
-{Malang, Indonesia}
-{\item{Food Sensory Research Group was the first student group in Universitas Brawijaya that focused in sensory science and research. In this group we constantly have discussion about new issues in sensory science, advance sensory methods, how to handle complexity in data, and practical applications of sensory science in Food Technology domain.}}\detaileditem
-{Head of Rehearsal Division}
-{2016 – 2017}
-{Angklung Wageningen from Indonesia Students Association of Wageningen}
-{Wageningen, The Netherlands}
-{\item{Angklung Wageningen is a group under Indonesian Students Association of Wageningen (ISAW) that focused to conserve and introduce “Angklung”, a tradiditional musical instruments from Jawa Barat in Indonesia, to both Indonesian and non-Indonesian audience.}}\detaileditem
-{Musician}
-{2016 – 2017}
-{Saman Dance ‘Ratoeh Duek’ from Indonesia Students Association of Wageningen}
-{Wageningen, The Netherlands}
-{\item{Saman Dance ‘Ratoeh Duek’ is a group under Indonesian Students Association of Wageningen (ISAW). We constantly performed “Saman” dance, a traditional dance from Aceh in Indonesia, in several events attended by Indonesian and non-Indonesian audience living in Netherlands.}}\detaileditem
-{Tutor for Students}
-{2012 – 2014}
-{Himpunan Mahasiswa Teknologi Hasil Pertanian (HIMALOGISTA) Universitas Brawijaya}
-{Malang, Indonesia}
-{\item{I volunteered to help and assist students in studying several courses taught in Food Science and Technology department, including: Fundamentals of Food Process Engineering, Food Process Engineering, Research Methodology and Experimental Design, and Statistics and Computation.}}}
+\detailedsection{\detaileditem{Initiator}{2016 – Present}{Komunitas R Indonesia}{Indonesia}{\item{Komunitas R Indonesia is a non-profit community for Indonesian to learn and share knowledge about R statistical programming language. I initiated this community back in 2016 and now it has more than 1000 members came from cities in Indonesia. Aside from managerial activity, in several occasions I also gave presentation and training to the members during community meetup. Additionally, I share my knowledge about R programming in Youtube video in hope that it can be beneficial to broader audience.}}\detaileditem{Coordinator}{Sep 2016 – Sep 2017}{Association of Indonesian Education Scholarship Awardee in Wageningen University and Research}{Wageningen, The Netherlands}{\item{The massive number of Indonesian scholarship awardee in Wageningen University and Research introduces challenge in communication, sharing of information, and management between students and Indonesian government. I took an initiative and an opportunity to help both students and Indonesian government to face these challenges. Furthermore, I also assisted the students who had issues or problems in studying, financial, administration, and daily life.}}\detaileditem{Member and Data Analyst}{2015 – Present}{Food Sensory Research Group Universitas Brawijaya}{Malang, Indonesia}{\item{Food Sensory Research Group was the first student group in Universitas Brawijaya that focused in sensory science and research. In this group we constantly have discussion about new issues in sensory science, advance sensory methods, how to handle complexity in data, and practical applications of sensory science in Food Technology domain.}}\detaileditem{Head of Rehearsal Division}{2016 – 2017}{Angklung Wageningen from Indonesia Students Association of Wageningen}{Wageningen, The Netherlands}{\item{Angklung Wageningen is a group under Indonesian Students Association of Wageningen (ISAW) that focused to conserve and introduce “Angklung”, a tradiditional musical instruments from Jawa Barat in Indonesia, to both Indonesian and non-Indonesian audience.}}\detaileditem{Tutor for Students}{2012 – 2014}{Himpunan Mahasiswa Teknologi Hasil Pertanian (HIMALOGISTA) Universitas Brawijaya}{Malang, Indonesia}{\item{I volunteered to help and assist students in studying several courses taught in Food Science and Technology department, including: Fundamentals of Food Process Engineering, Food Process Engineering, Research Methodology and Experimental Design, and Statistics and Computation.}}}
+
+\newpage
 
 \hypertarget{presentation}{%
 \section{Presentation}\label{presentation}}
 
-\detailedsection{\detaileditem
-{Public workshop at R Academy Telkom University}
-{20-24 May 2019}
-{Bootcamp R for data science}
-{Bandung, Indonesia}
-{\item{R essentials, working with version control system, data science workflow using tidyverse in R, machine learning and statistics, and case study of common machine learning problems}}\detaileditem
-{Komunitas R Indonesia meetup at Algoritma Education Center}
-{11 May 2019}
-{Data carpentry with tidyverse}
-{Jakarta, Indonesia}
-{\item{Definition of data carpentry for handling data, common functions for data transformation, scrapping and cleaning data from webpage}}\detaileditem
-{Public workshop at R Academy Telkom University}
-{13 April 2019}
-{Mastering data visualisation}
-{Bandung, Indonesia}
-{\item{Introduction to Grammar of Graphics, building a graph layer by layer, creating various types of data visualisation and customisation, manipulating graph looks and feels}}\detaileditem
-{Public workshop at R Academy Telkom University}
-{6 April 2019}
-{R introduction for data science}
-{Bandung, Indonesia}
-{\item{R fundamentals, importing data from various sources, performing data manipulation, creating data visualisation, and building models and iteration}}\detaileditem
-{Komunitas R Indonesia meetup at Perbanas Institute}
-{23 March 2019}
-{Let’s build your first RStudio snippets and addins}
-{Jakarta, Indonesia}
-{\item{Make use of RStudio snippets to write common codes, introduction to addins, writing custom code snippets, and creating an R package containing addins}}\detaileditem
-{Komunitas R Indonesia meetup at Telkom University}
-{22 February 2019}
-{Introduction to R (+) for data science}
-{Bandung, Indonesia}
-{\item{Introduction to R, empowering R with RStudio+git, glimpse of tidyverse packages collection, chaining multiple operations in R, and practical activity on analysing Indonesia presidential election data}}\detaileditem
-{Datascientalk HIMATIKA Bandung Institute of Technology}
-{26 January 2019}
-{R (+) for data science}
-{Bandung, Indonesia}
-{\item{R as statistical programming language, RStudio as IDE, git+GitHub as version control system, and tidyverse for data science activity}}\detaileditem
-{Komunitas R Indonesia meetup at Microsoft Indonesia}
-{19 January 2019}
-{R+RStudio tips and tricks:hidden gems to improve workflow}
-{Jakarta, Indonesia}
-{\item{Trivia in R statistical programming language, guidelines for coding style, advices on how to setup R project, helpful RStudio shortcuts and tricks to improve workflow}}\detaileditem
-{Internal workshop at Department of Food Science and Technology, Bogor Agricultural University}
-{19-20 December 2019}
-{Workshop for sensory data analyses}
-{Bogor, Indonesia}
-{\item{Conventional and advance sensory methods, statistical approach for analysing sensory data, and practical on how to analyse sensory data from various sensory methods using R and SenseHub}}\detaileditem
-{Komunitas R Indonesia meetup at Bandung Institute of Technology}
-{15 November 218}
-{R in food sensory research}
-{Bandung, Indonesia}
-{\item{Application of R for linking food properties and consumer preference, food production optimisation, and detection of chewing activity}}\detaileditem
-{International Coference on Green Agroindustry and Bioeconomic (ICGAB)}
-{19 September 2018}
-{SenseHub: an integrated web application for sensory analyses}
-{Malang, Indonesia}
-{\item{Research methods in sensory science, discussion of available software for sensory analyses, proposal of new sensory software named SenseHub and its comparison with existing statistical software }}}
+\detailedsection{\detaileditem{Internal workshop at School of Business and Management, Bandung Institute of Technology}{ 5 July 2019}{Translating consumer voice for market insight: an introduction to sensory science}{Bandung, Indonesia}{\item{Sensory science and its domain, application of sensory science, simulation of sensory research, demonstration of sensory data analysis}}\detaileditem{Public workshop at R Academy Telkom University}{20-24 May 2019}{Bootcamp R for data science}{Bandung, Indonesia}{\item{R essentials, working with version control system, data science workflow using tidyverse in R, machine learning and statistics, and case study of common machine learning problems}}\detaileditem{Komunitas R Indonesia meetup at Algoritma Education Center}{11 May 2019}{Data carpentry with tidyverse}{Jakarta, Indonesia}{\item{Definition of data carpentry for handling data, common functions for data transformation, scrapping and cleaning data from webpage}}\detaileditem{Public workshop at R Academy Telkom University}{13 April 2019}{Mastering data visualisation}{Bandung, Indonesia}{\item{Introduction to Grammar of Graphics, building a graph layer by layer, creating various types of data visualisation and customisation, manipulating graph looks and feels}}\detaileditem{Public workshop at R Academy Telkom University}{6 April 2019}{R introduction for data science}{Bandung, Indonesia}{\item{R fundamentals, importing data from various sources, performing data manipulation, creating data visualisation, and building models and iteration}}\detaileditem{Komunitas R Indonesia meetup at Perbanas Institute}{23 March 2019}{Let’s build your first RStudio snippets and addins}{Jakarta, Indonesia}{\item{Make use of RStudio snippets to write common codes, introduction to addins, writing custom code snippets, and creating an R package containing addins}}\detaileditem{Komunitas R Indonesia meetup at Telkom University}{22 February 2019}{Introduction to R (+) for data science}{Bandung, Indonesia}{\item{Introduction to R, empowering R with RStudio+git, glimpse of tidyverse packages collection, chaining multiple operations in R, and practical activity on analysing Indonesia presidential election data}}\detaileditem{Datascientalk HIMATIKA Bandung Institute of Technology}{26 January 2019}{R (+) for data science}{Bandung, Indonesia}{\item{R as statistical programming language, RStudio as IDE, git+GitHub as version control system, and tidyverse for data science activity}}\detaileditem{Komunitas R Indonesia meetup at Microsoft Indonesia}{19 January 2019}{R+RStudio tips and tricks:hidden gems to improve workflow}{Jakarta, Indonesia}{\item{Trivia in R statistical programming language, guidelines for coding style, advices on how to setup R project, helpful RStudio shortcuts and tricks to improve workflow}}\detaileditem{Internal workshop at Department of Food Science and Technology, Bogor Agricultural University}{19-20 December 2019}{Workshop for sensory data analyses}{Bogor, Indonesia}{\item{Conventional and advance sensory methods, statistical approach for analysing sensory data, and practical on how to analyse sensory data from various sensory methods using R and SenseHub}}\detaileditem{Komunitas R Indonesia meetup at Bandung Institute of Technology}{15 November 218}{R in food sensory research}{Bandung, Indonesia}{\item{Application of R for linking food properties and consumer preference, food production optimisation, and detection of chewing activity}}\detaileditem{International Coference on Green Agroindustry and Bioeconomic (ICGAB)}{19 September 2018}{SenseHub: an integrated web application for sensory analyses}{Malang, Indonesia}{\item{Research methods in sensory science, discussion of available software for sensory analyses, proposal of new sensory software named SenseHub and its comparison with existing statistical software }}}
 
 \hypertarget{developed-software}{%
 \section{Developed Software}\label{developed-software}}

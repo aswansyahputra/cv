@@ -70,7 +70,8 @@ work %>%
 
 # External Activity
 ```{r}
-activity <- read.csv("../data/activity.csv")
+activity <- read.csv("../data/activity.csv") %>% 
+  slice(-5)
 
 activity %>%
   detailed_entries(
@@ -81,6 +82,8 @@ activity %>%
     why = why
   )
 ```
+
+\newpage
 
 # Presentation
 ```{r}
@@ -95,6 +98,7 @@ presentation %>%
     why = content
   )
 ```
+
 
 # Developed Software
 
