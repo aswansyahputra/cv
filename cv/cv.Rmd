@@ -1,6 +1,6 @@
 ---
 name: "Muhammad Aswan **Syahputra**"
-position: "Sensory Scientist \u00B7 Sensometrics Specialist"
+position: "Data Analyst \u00B7 Sensometrics Specialist"
 aboutme: "I would like to recognize myself as a Food Data Scientist. I have an expertise in Sensory Science with a Food Technology background, a passion in data analysis and visualisation, an eagerness in R statistical programming, and a hobby in developing analytical web application."
 address: "Puri Cipageran Indah I Blok A No 191, Kota Cimahi, Jawa Barat, Indonesia"
 phone: (+62) 822 3465 3816
@@ -19,6 +19,21 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 ```
 
+# Work
+
+```{r}
+work <- read.csv("../data/work.csv")
+
+work %>% 
+  detailed_entries(
+    what = what,
+    when = when,
+    with = with,
+    where = where,
+    why = why
+  )
+```
+
 # Education
 
 ```{r}
@@ -34,9 +49,22 @@ education %>%
   )
 ```
 
-# Experience
+# External Activity
+```{r}
+activity <- read.csv("../data/activity.csv") %>% 
+  slice(c(-4, -5))
 
-## Research
+activity %>%
+  detailed_entries(
+    what = what,
+    when = when,
+    with = with,
+    where = where,
+    why = why
+  )
+```
+
+# Research
 
 ```{r}
 research <- read.csv("../data/research.csv")
@@ -51,41 +79,8 @@ research %>%
   )
 ```
 
+# Delivered Presentation and Training
 
-
-## Work
-
-```{r}
-work <- read.csv("../data/work.csv")
-
-work %>% 
-  detailed_entries(
-    what = what,
-    when = when,
-    with = with,
-    where = where,
-    why = why
-  )
-```
-
-# External Activity
-```{r}
-activity <- read.csv("../data/activity.csv") %>% 
-  slice(-5)
-
-activity %>%
-  detailed_entries(
-    what = what,
-    when = when,
-    with = with,
-    where = where,
-    why = why
-  )
-```
-
-\newpage
-
-# Presentation
 ```{r}
 presentation <- read.csv("../data/presentation.csv")
 
@@ -99,9 +94,7 @@ presentation %>%
   )
 ```
 
-
 # Developed Software
-
 
 ```{r}
 project <- read.csv("../data/project.csv")
@@ -113,15 +106,3 @@ project %>%
     .protect = FALSE
   )
 ```
-
-<!-- # Skill -->
-
-<!-- ```{r} -->
-<!-- skill <- read.csv("../data/skill.csv") -->
-
-<!-- skill %>%  -->
-<!--   brief_entries( -->
-<!--     what = what, -->
-<!--     when = when,  -->
-<!--     .protect = FALSE) -->
-<!-- ``` -->
