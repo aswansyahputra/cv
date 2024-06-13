@@ -1,9 +1,0 @@
-what,when
-"Bahasa Indonesia, English.",\textbf{Language}
-"GNU/Linux, Microsoft Windows.",\textbf{Computer OS}
-"R programming language, shell scripting.",\textbf{Programming}
-"R programming language, Jamovi, JASP, SPSS, Minitab, DesignExpert.",\textbf{Stats software}
-"Inkscape, GNU Image Manipulation Program (GIMP), Kdenlive.",\textbf{Design software}
-"LibreOffice, Microsoft Office.",\textbf{Office softwares}
-"SenseHub, EyeQuestion, SensoMineR (in R programming language), sensR (in R programming language).",\textbf{Sensory software}
-"EDF Browser (for signal processing, i.e. EMG, ECG, PPG),  Behavioral Observation Research Interactive Software (BORIS).",\textbf{Other software}
