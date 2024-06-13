@@ -1,0 +1,180 @@
+---
+name: "Muhammad Aswan"
+surname: "Syahputra"
+position: "Senior Data Analyst"
+address: "Kota Cimahi, Jawa Barat, Indonesia"
+date: "`r format(Sys.time(), '%B %Y')`"
+email: "muhammadaswansyahputra@gmail.com"
+github: "aswansyahputra"
+linkedin: "aswansyahputra"
+aboutme: "A data visualization designer by passion, an analytical automation aficionado by curiosity, and a food technologist by training"
+headcolor: "1C448E"
+output: vitae::awesomecv
+---
+
+# Summary
+
+Experienced Data Analyst with a robust background in Sensory Science and Food Technology. Specializes in data analysis, visualization, R programming, and developing analytical web applications. Proven track record in enhancing decision-making through insightful data analysis in food-tech, gov-tech, and edu-tech domains.
+
+# Professional Experience
+
+## Senior Data Analyst, **Sekolah.mu**
+
+*Jakarta, Indonesia • Aug 2021 – Present*
+
+- Developed custom in-house analytical web application for internal and external use.
+- Conducted various analyses for educational technology.
+- Utilized R, Python, SQL, dbt, and Metabase for data analysis.
+- Implemented automation tools like GitLab CI/CD and GitHub Actions for data and analytical automation.
+
+## Senior Data Analyst, **Jabar Digital Service**
+
+*Bandung, Indonesia • Nov 2019 – Aug 2021*
+
+- Gathered insights from sectoral data to support decision and policy-making.
+- Optimized budget and resource allocation within government sectors.
+- Improved the quality of digital products tailored for government and public use.
+
+## Sensometrics Specialist, **Sensolution.ID**
+
+*Bandung, Indonesia • Nov 2018 – Nov 2019*
+
+- Developed software for sensory data collection and analysis.
+- Delivered training on advanced sensory methods and analyses.
+- Assisted clients in designing and performing sensory research.
+
+## Instructor, **DQLab**
+
+*Jakarta, Indonesia • Jul 2020 – Oct 2021*
+
+- Developed and evaluated data science project materials.
+- Mentored members and evaluated project submissions.
+
+## Instructor, **Telkom University**
+
+*Bandung, Indonesia • May 2019 – Aug 2019*
+
+- Designed and delivered training courses on R for data science, data visualization, and machine learning.
+
+## Research Intern, **Indonesian Coffee and Cocoa Research Institute (ICCRI)**
+
+*Jember, Indonesia • Dec 2013 – Feb 2014*
+
+- Evaluated sensory characteristics of various specialty coffee.
+- Conducted sensory evaluation of chocolate-based products.
+
+\newpage 
+
+# Education
+
+## Master's Degree in Sensory Science, **Wageningen University & Research**
+
+*Wageningen, The Netherlands • 2016 – 2018*
+
+- Thesis: "Observation of Chewing Activity using Photoplethysmography (PPG) Method".
+- Internship: "Development of SenseHub: An Integrated Web Application for Sensory Analyses".
+
+## Bachelor's Degree in  Food Science and Technology, **Universitas Brawijaya**
+
+*Malang, Indonesia • 2011 – 2015*
+
+- Thesis: "Exploratory Study: The Influence of Iced-Coffee Drinking Methods on Consumers' Multisensory Perceptions Using Rate-all-that-Apply (RATA) Method:".
+
+# Skills
+
+- Sensory Science and Sensometrics
+- Statistical Analysis
+- Data Visualization
+- R Programming
+- Shiny (R and Python)
+- SQL
+- BigQuery
+- dbt
+- CI/CD (GitLab CI/CD, GitHub Actions)
+- Docker
+- Shell script
+
+# Languages
+
+- English (Professional Working Proficiency)
+- Indonesian (Native)
+
+# Honors & Awards
+
+- LPDP Scholarship
+- PPA Scholarship
+- Cum Laude Graduate
+
+# Publications
+
+- SenseHub: An Integrated Web Application for Sensory Analyses
+- Effects of Delivery Methods on Multisensory Perceptions: A Review
+- Consumer Preference and Satisfaction Analysis on Croissant in Malang Area
+
+# Developed Software
+
+- `jabr`: An R Interface for Accessing Open Data Jawa Barat
+- `sensehubr`: Tidy Tools for Sensory Data Analysis
+- `bandungjuara`: An R Interface for Accessing Open Data Kota Bandung
+- `jakartaraya`: An R Interface for Accessing Open Data Kota Jakarta
+- `nusandata`: Curated Datasets about Indonesia
+- `SenseQuest`: A Web Application for Sensory Data Collection
+- `Aquastats`: A Web Application for Groundwater Data Analyses
+- `Thermostats`: A Web Application for Hot Water Data Analyses
+- `MCDM`: A Shiny Application for Performing Multiple Criteria Decision Making (MCDM)
+- etc.
+
+\newpage
+
+# External Activities
+
+## Initiator, Komunitas R Indonesia
+
+*Indonesia • 2016 – Present*
+
+- Founded a non-profit community for learning and sharing knowledge about R programming.
+- Conducted presentations and training sessions.
+
+## Coordinator, Association of Indonesian Education Scholarship Awardee in Wageningen University and Research
+
+*The Netherlands • Sep 2016 – Sep 2017*
+
+- Managed communication and information sharing among scholarship awardees.
+- Assisted students with academic and daily life challenges.
+
+## Member and Data Analyst, Food Sensory Research Group, Universitas Brawijaya
+
+*Indonesia • 2015 – 2018*
+
+- Engaged in discussions on sensory science and research.
+- Focused on practical applications of sensory science in food technology.
+
+# Research Projects
+
+- Thermostats: An Open Source Shiny App for Your Open Data Repository
+- Consumer Preference and Satisfaction Analysis on Croissant in Malang Area
+- SenseHub: An Integrated Web Application for Sensory Analyses
+- Observation of Chewing Activity using Photoplethysmography (PPG) Method
+- Effects of Delivery Methods on Multisensory Perceptions: A Review
+- Exploratory Study: The Influence of Instant Iced-Coffee Drinking Methods on Consumers’ Multisensory Perceptions Utilizing Rate-all-that-Apply (RATA) Method
+
+# Delivered Presentations and Training
+
+- Extending RStudio with Git and GitHub
+- Data Rectangling in R: A Journey from JSON to CSV
+- Fundamental Tidy Data Science in R
+- Translating Consumer Voice for Market Insight: An Introduction to Sensory Science
+- Bootcamp R for Data Science
+- Data Carpentry with Tidyverse
+- Mastering Data Visualization
+- R Introduction for Data Science
+- Let’s Build Your First RStudio Snippets and Addins
+- Introduction to R (+) for Data Science
+- Workshop for Sensory Data Analyses
+- R in Food Sensory Research
+- SenseHub: An Integrated Web Application for Sensory Analyses
+- Let's walk through Shiny-app Development Framework
+- How to Deploy Shiny-app in Huggingface for Free
+- Fundamental Communication Framework in R: RMarkdown and Shiny
+- Utilizing Memoization Technique in Function and API Calls
+- etc.
