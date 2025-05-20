@@ -86,13 +86,15 @@ Experienced Data Analyst with a robust background in Sensory Science and Food Te
 - Statistical Analysis
 - Data Visualization
 - R Programming
+- Python Programming
 - Shiny (R and Python)
 - SQL
 - BigQuery
 - dbt
 - CI/CD (GitLab CI/CD, GitHub Actions)
 - Docker
-- Shell script
+- Gen-AI Prompt Engineering
+- Shell scripting
 
 # Languages
 
@@ -168,7 +170,7 @@ Experienced Data Analyst with a robust background in Sensory Science and Food Te
 - Data Carpentry with Tidyverse
 - Mastering Data Visualization
 - R Introduction for Data Science
-- Let’s Build Your First RStudio Snippets and Addins
+- Let's Build Your First RStudio Snippets and Addins
 - Introduction to R (+) for Data Science
 - Workshop for Sensory Data Analyses
 - R in Food Sensory Research
@@ -176,5 +178,8 @@ Experienced Data Analyst with a robust background in Sensory Science and Food Te
 - Let's walk through Shiny-app Development Framework
 - How to Deploy Shiny-app in Huggingface for Free
 - Fundamental Communication Framework in R: RMarkdown and Shiny
+- Statistics in Food Industry: a glimpse into Sensometrics
 - Utilizing Memoization Technique in Function and API Calls
+- Data Analytics with Python
+- Empowering Healthcare Data Workflows with R
 - etc.
