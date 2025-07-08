@@ -1,7 +1,7 @@
 ---
 name: "Muhammad Aswan"
 surname: "Syahputra"
-position: "Senior Data Analyst"
+position: "Data & AI Manager"
 address: "Kota Cimahi, Jawa Barat, Indonesia"
 date: "`r format(Sys.time(), '%B %Y')`"
 email: "muhammadaswansyahputra@gmail.com"
@@ -14,13 +14,21 @@ output: vitae::awesomecv
 
 # Summary
 
-Experienced Data Analyst with a robust background in Sensory Science and Food Technology. Specializes in data analysis, visualization, R programming, and developing analytical web applications. Proven track record in enhancing decision-making through insightful data analysis in food-tech, gov-tech, and edu-tech domains.
+Experienced Data Analyst with a robust background in Sensory Science and Food Technology. Specializes in data analytics, visualization, R programming, analytical web applications, and AI automation. Proven track record in enhancing decision-making through insightful data analysis in food-tech, gov-tech, and edu-tech domains.
 
 # Professional Experience
 
+## Data & AI Manager, **Sekolah.mu**
+
+*Jakarta, Indonesia • Jul 2025 – Present*
+
+- Lead the strategic direction of Sekolah.mu’s data and AI initiatives.
+- Ensure seamless integration of scalable pipeline architectures, advanced analytics, and cutting-edge AI/ML systems.
+- Collaborate with cross-functional teams to inform and achieve business growth goals.
+
 ## Senior Data Analyst, **Sekolah.mu**
 
-*Jakarta, Indonesia • Aug 2021 – Present*
+*Jakarta, Indonesia • Aug 2021 – Jun 2025*
 
 - Developed custom in-house analytical web application for internal and external use.
 - Conducted various analyses for educational technology.
@@ -63,8 +71,6 @@ Experienced Data Analyst with a robust background in Sensory Science and Food Te
 - Evaluated sensory characteristics of various specialty coffee.
 - Conducted sensory evaluation of chocolate-based products.
 
-\newpage 
-
 # Education
 
 ## Master's Degree in Sensory Science, **Wageningen University & Research**
@@ -91,9 +97,11 @@ Experienced Data Analyst with a robust background in Sensory Science and Food Te
 - SQL
 - BigQuery
 - dbt
+- n8n
 - CI/CD (GitLab CI/CD, GitHub Actions)
 - Docker
 - Gen-AI Prompt Engineering
+- AI automation
 - Shell scripting
 
 # Languages
@@ -125,8 +133,6 @@ Experienced Data Analyst with a robust background in Sensory Science and Food Te
 - `Thermostats`: A Web Application for Hot Water Data Analyses
 - `MCDM`: A Shiny Application for Performing Multiple Criteria Decision Making (MCDM)
 - etc.
-
-\newpage
 
 # External Activities
 
@@ -182,4 +188,3 @@ Experienced Data Analyst with a robust background in Sensory Science and Food Te
 - Utilizing Memoization Technique in Function and API Calls
 - Data Analytics with Python
 - Empowering Healthcare Data Workflows with R
-- etc.
